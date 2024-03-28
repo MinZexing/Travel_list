@@ -63,7 +63,10 @@ function Form({ onAddItem }) {
   function handleSubmit(e) {
     e.preventDefault();
 
-    if (!description) return;
+    if (!description) {
+      alert("Please type in item description");
+      return;
+    }
     const newItem = { description, quantity, packed: false, id: Date.now() };
     console.log(newItem);
 
