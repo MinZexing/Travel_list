@@ -33,7 +33,6 @@ export default function App() {
       const confirmed = window.confirm(
         "Are you sure you want to delete all items?"
       );
-
       if (confirmed) setItem([]);
     }
   }
